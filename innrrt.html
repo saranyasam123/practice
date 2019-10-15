@@ -11,7 +11,7 @@
     <thead>
         <tr>
         
-           <th>id</th>
+           <th onclick="sorteddata()">id</th>
            <th>email</th>
            <th>first name</th>
            <th>last name</th>
@@ -111,9 +111,27 @@
  
  for(var x=0;x<resultdata.length;x++){
      
-        table.innerHTML = table.innerHTML+"<tr><td>"+resultdata[x]['email']+"</td><tr>"
+        table.innerHTML = table.innerHTML+"<tr><td>"+resultdata[x]['id']+"</td><td>"+resultdata[x]['email']+"</td><tr>"
      
  }
+        
+        
+        function sorteddata(){
+            
+            var resultdat=resultdata.reverse()
+            
+            
+    console.log()
+             var table=document.getElementById('preparetable')
+                table.innerHTML =""
+              for(var x=0;x<resultdat.length;x++){
+
+
+                    table.innerHTML = table.innerHTML+"<tr><td>"+resultdat[x]['id']+"</td><td>"+resultdat[x]['email']+"</td><tr>"
+
+             }
+            
+        }
       </script>    
 
 </html>
