@@ -6,35 +6,41 @@
 <script>
    class data {
 
-	constructor() { //mandatory
-		var c = {
-			'name': ['sam'],
-			'age': ['22']
-		}
+        constructor() { //mandatory
+            var c = {
+                'name': ['sam'],
+                'age': ['22']
+            }
 
-		this.b = [c['name'][0]]
-		this.e = [c['age'][0]]
+            this.b = [c['name'][0]]
+            this.e = [c['age'][0]]
 
-	}
-	sorted() {
-		this.b.sort()
-		return this.b.sort()
-//		this.e.sort()
-//		return this.e.sort()
-	}
-	sort() {
-		this.e.sort()
-		return this.e.sort()
-	}
+        }
+        sorted() {
+            this.b.sort()
+            return this.b.sort()
+        //		this.e.sort()
+        //		return this.e.sort()
+        }
+        sort() {
+            this.e.sort()
+            return this.e.sort()
+        }
+       
+       display(c){
+           
+           console.log(c)
+           
+       }
 
 
-}
+    }
 
 
 var s = new data()
 var d = s.sorted()
 console.log(d)
-
+s.display('shreyas')
 var h = s.sort()
 console.log(h)
 

@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>login form</title>
+<link rel="stylesheet" href="style1.css" type="text/css">
+</head>
+
+    
+<body>
+    
+    <table>
+    <thead>
+        <tr>
+        
+           <th>id</th>
+           <th>email</th>
+           <th>first name</th>
+           <th>last name</th>
+           <th></th>
+        
+        </tr>
+        
+        
+        </thead>
+    <tbody id="preparetable">
+        
+        
+        
+        </tbody>
+    
+    </table>
+    
+    <input type="text" id="displaycapture">
+    
+    <button onclick="todo()">clickme</button>
+    
+    <div id="appendid"></div>
+    
+</body>
+    <script>
+
+    
+    function todo(){
+//        var x = document.getElementById('displaycapture').value
+//        console.log(x)
+//        
+        
+        var y = document.getElementById('appendid')
+        
+        var s =[4,7,9,13,6565,677]
+        for(var i=0;i<s.length;i++){
+            
+            
+                y.innerHTML=y.innerHTML+"<div>"+s[i]+"</div>"
+            
+        }
+        
+    }
+    
+    
+    
+ var resultdata =[
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "first_name": "Michael",
+            "last_name": "Lawson",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "first_name": "Lindsay",
+            "last_name": "Ferguson",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "first_name": "Tobias",
+            "last_name": "Funke",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "first_name": "Byron",
+            "last_name": "Fields",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "first_name": "George",
+            "last_name": "Edwards",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "first_name": "Rachel",
+            "last_name": "Howell",
+            "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"
+        }
+    ]
+ 
+ 
+ 
+ var table=document.getElementById('preparetable')
+ 
+ 
+ 
+ for(var x=0;x<resultdata.length;x++){
+     
+        table.innerHTML = table.innerHTML+"<tr><td>"+resultdata[x]['email']+"</td><tr>"
+     
+ }
+      </script>    
+
+</html>
